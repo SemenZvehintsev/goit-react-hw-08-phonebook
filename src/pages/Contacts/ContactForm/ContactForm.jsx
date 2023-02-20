@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from 'pages/Contacts/ContactForm/ContactForm.module.css'
 import { useDispatch, useSelector } from "react-redux";
-import { selectContacts } from "redux/contacts/selectors";
+import { selectContacts } from "redux/selectors";
 import { addContact, fetchContacts } from "redux/contacts/contacts.thunk";
 
 
