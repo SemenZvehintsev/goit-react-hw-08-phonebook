@@ -1,8 +1,5 @@
 export const authInitialState = {
-    user: {
-        name: null,
-        email: null,
-    },
+    user: null,
     token: null,
     isLoading: false,
     error: null

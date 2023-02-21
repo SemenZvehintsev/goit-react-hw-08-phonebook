@@ -1,7 +1,7 @@
 .navigation {
+    padding: 10px 30px;
     border-bottom: 1px solid gray;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 3px;
-    padding: 10px;
 }
 
 .list {
@@ -13,6 +13,15 @@
 .link {
     color: black;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 14px;
     text-decoration: none;
+}
+
+.container {
+    padding: 20px;
+}
+
+.title {
+    margin: 20px 0 5px 20px;
+    padding: 5px;
 }

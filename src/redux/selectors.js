@@ -11,3 +11,5 @@ export const selectToken = state => state.user.token;
 export const selectUserError = state => state.user.error;
 
 export const selectUserName = state => state.user.user.name;
+
+export const selectUserIsLoading = state => state.user.isLoading;

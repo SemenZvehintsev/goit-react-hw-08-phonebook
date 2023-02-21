@@ -17,10 +17,10 @@ export const ContactForm = () => {
 
     const handleSubmit =(event) => {
         event.preventDefault();
-        if (contacts.map(({contactName}) => contactName.toLowerCase()).includes(name.toLowerCase())) { 
+        if (contacts.map(({name}) => name.toLowerCase()).includes(name.toLowerCase())) { 
             alert(`${name} is already in contacts.`)} 
         else {
-            const newContact = {contactName: name, contactNumber: number}
+            const newContact = { name: name, number: number}
             dispatch(addContact(newContact));
             setName('');
             setNumber('');

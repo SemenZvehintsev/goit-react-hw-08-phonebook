@@ -7,7 +7,7 @@ const handlePending = state => {
 };
 
 const handleRejected = (state, {payload}) => {
-    state.contacts.isLoading = true;
+    state.contacts.isLoading = false;
     state.contacts.error = payload;
 };
 
