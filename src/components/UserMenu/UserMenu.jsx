@@ -1,18 +1,18 @@
-import { useSelector } from "react-redux"
-import { selectToken, selectUserName } from "redux/selectors"
+import { useDispatch, useSelector } from "react-redux"
+import { userLogout } from "redux/auth/auth.thunk";
+import { selectUserName } from "redux/selectors"
 
 export const UserMenu = () => {
 
     const userName = useSelector(selectUserName);
-    const token = useSelector(selectToken);
+    const dispatch = useDispatch();
 
     const handleLogout = () =>{
-        if (token){
-        console.log('huy')}
+        dispatch(userLogout())
     }
 
     return <div>
         <p>Welcome, {userName}!</p>
-        <button type="button" onclick={handleLogout}>Logout</button>
+        <button type="button" onClick={handleLogout}>Logout</button>
     </div>
 }
